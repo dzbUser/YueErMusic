@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+	<script src="vue/vue.min.js"></script>
+	<link rel="stylesheet" href="css/index.css" />
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+		var selected=0;
+//		var selected1=0;
+		$(document).ready(function(){
+
+//			$("#navigation li").mouseenter(function(){
+//				$(this).css("background-color","#000000");
+//			})
+//			
+//			$("#navigation li").mouseleave(function(){
+//				$(this).css("background-color","gray");
+//			})
+
+			var lis=$("#nav li");
+			changeBackground(lis,"gray","#585656",selected);
+			var ems=$("#header2 em");
+			changeBackground(ems,"#585656","gray",0);
+			
+			$('#find').keyup(function(){
+				var text = $(this).val();
+				if(text!=""){
+					$("#findContent").css("display","block")
+				}	
+			})
+			
+			$("#find").blur(function(){
+				$("#findContent").css("display","none")
+			})
+	});
+	
+	function changeBackground( elements, bkColor, chBkColor, selectNum){
+		
+		for(var i=0;i<elements.length;i++){
+			if(i==selectNum){
+				console.log(selectNum);
+				$(elements[i]).css("background-color",chBkColor)
+				
+				$(elements[i]).mouseenter(function(){
+					$(this).css("background-color",chBkColor);
+				})
+				$(elements[i]).mouseleave(function(){	
+					$(this).css("background-color",chBkColor);
+				})
+			}
+			else{
+				$(elements[i]).css("background-color",bkColor);
+				$(elements[i]).mouseenter(function(){
+					$(this).css("background-color",chBkColor);
+				})
+				
+				$(elements[i]).mouseleave(function(){
+					$(this).css("background-color",bkColor);
+						
+				})
+			}
+		}
+	}
+	
+	 
+//	function changeSelected(elements, bkColor, chBkColor, selectNum){
+//		for(var i=0;i<elements.length;i++){
+//			
+//			if(i==selectNum){
+//				console.log(selectNum)
+//				$(elements[i]).css("background-color",chBkColor)
+//			}
+//			else{
+//				$(elements[i]).css("background-color",bkColor)
+//			}
+//		}
+//	}
+	
+	</script>
+	<body>
+		<div class="header">
+			<div class="inner_c">
+				<div class="header-name">
+					HappyMusic
+				</div>
+				<div class="nav" id="nav"> 
+					<ul>
+						<li><a href="javascript:iframeChangeAndMoveNav(0,'discover.html','block')">发现音乐</a></li>
+						<li><a href="javascript:iframeChangeAndMoveNav(1,'myMusic.html','none')">我的音乐</a></li>
+						<li><a href="#">朋友</a></li>
+						<li><a href="#">音乐人</a></li>
+					</ul>
+				</div>
+				<div class="header-right">
+					<div class="header-find">
+						<label></label>
+						<input type="text" id="find"/>
+						
+						<div class="find-content" id="findContent">
+							<p>查找内容></p>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">单曲</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">歌单</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">歌手</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">视频</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="header-vdieo">
+						<a href="#">视频上传</a>
+					</div>
+					<!--<div class="header-user  id="user1">
+						<div v-if="seen">
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513744134400&di=ddc31b1abf8d190610bbc45247669122&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-02-02%2F211841154.jpg" />
+							让我给你柠檬
+						</div>
+						<div v-else>
+							<a href="#" >登录</a>
+						</div>
+					</div>-->
+					<div class="header-user" id="user1">
+						<div v-if="seen">
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513744134400&di=ddc31b1abf8d190610bbc45247669122&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-02-02%2F211841154.jpg" />
+						</div>
+						<div v-else>
+							<a href="#" >登录</a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="header2" id="header2">
+			<div class="inner_c">
+				<ul>
+					<li><a href="javascript:iframeChangenum(0,'discover.html')"><em>推荐</em></a></li>
+					<li><a href="javascript:iframeChangenum(1,'sort.html')"><em>排行榜</em></a></li>
+					<li><a href="javascript:iframeChangenum(2,'musicList.html')"><em>歌单</em></a></li>
+					<li><a href="javascript:iframeChangenum(3,'songer.html')"><em>歌手</em></a></li>
+				</ul>
+			</div>
+		</div>
+		<iframe src="discover.html" name='bodyiframe' width='100%'  scrolling="no"  id="zhong">
+			
+		</iframe>
+		<script type="text/javascript">
+			new Vue({
+				el: '#user1',
+				data:{
+					seen:false
+				}
+			})
+			
+			function parentFunction( fheight){
+				console.log(fheight)
+//				var iframeHeigh=$("#zhong").contents().find("body").height()
+				$("#zhong").height(fheight)
+				console.log("parent")
+			}
+			
+			function iframeChangenum(num,src1){
+//				selected1=num;
+//				console.log(selected1)
+				var ems=$("#header2 em");
+				$("#zhong").attr("src",src1);
+				changeBackground(ems,"#585656","gray",num);	
+			}
+			
+			function iframeChangeAndMoveNav(num,src1,str){
+				var ems=$("#nav li");
+				$("#zhong").attr("src",src1);
+				changeBackground(ems,"gray","#585656",num);	
+				$("#header2").css("display",str);
+			}
+			//parentFunction(1000,1000)
+		</script>
+	</body>
+</html>

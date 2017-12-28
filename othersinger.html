@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/songer.css" />
+	<script src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			function changeBorder(elemens,select){
+				console.log("1111")
+				for (var i=0;i<elemens.length;i++) {
+					console.log(i)
+					if(i==select){
+						$(elemens[i]).css("border","2px solid #E2E2E2");
+						$(elemens[i]).css("color","red");
+					}
+					else{
+						$(elemens[i]).css("border","1px solid transparent");
+						$(elemens[i]).css("color","black");
+					}
+				}	
+			}
+			
+			changeBorder($("#songerStyle li"),1)
+		})
+	</script>
+	<body>
+		<div class="inner_c">
+			<div class="content">
+				<div class="content-left">
+					<div class="left-item">
+						<h3>推荐</h3>
+						<ul id="songerStyle">
+							<li><a>入驻歌手</a></li>
+							<li><a>入驻歌手</a></li>
+						</ul>
+					</div>
+					<div class="left-item">
+						<h3>推荐</h3>
+						<ul>
+							<li><a>入驻歌手</a></li>
+							<li><a>入驻歌手</a></li>
+						</ul>
+					</div>
+					<div class="left-item">
+						<h3>推荐</h3>
+						<ul>
+							<li><a>入驻歌手</a></li>
+							<li><a>入驻歌手</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="right-header">
+						<h2>入驻歌手</h2>
+						<div class="more">
+							<a>更多></a>
+						</div>
+					</div>
+					<ul class="search">
+						<li><a>热门</a></li>
+						<li><a>A</a></li>
+						<li><a>A</a></li>
+						<li><a>A</a></li>
+						<li><a>A</a></li>
+						<li><a>A</a></li>
+						<li><a>A</a></li>
+						<li><a>其他</a></li>
+					</ul>
+					<div class="singer-content">
+						<ul>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+							<li>
+								<a>
+									<img  src="http://p3.music.126.net/F9asgcj7C7qSl_je9XDvRw==/603631883675241.jpg?param=130y130" style="width: 156px;height: 156px;"/>
+								</a>
+								<div class="IfRuZhu">
+									<a>张惠妹</a>
+									<i></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					
+					<ul class="other-name">
+						<li class="other-name-item">
+							<a>张惠妹</a>
+							<i></i>
+						</li>
+						<li class="other-name-item">
+							<a>张惠妹</a>
+							<i></i>
+						</li>
+						<li class="other-name-item">
+							<a>张惠妹</a>
+							<i></i>
+						</li>
+						<li class="other-name-item">
+							<a>张惠妹</a>
+							<i></i>
+						</li>
+						<li class="other-name-item">
+							<a>张惠妹</a>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function callParent(){
+				var fheight= document.body.scrollHeight;
+				parent.parentFunction(fheight);
+			}
+			callParent()
+		</script>
+	</body>
+</html>

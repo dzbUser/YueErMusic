@@ -1,0 +1,143 @@
+body{
+	background-color: #F2F2F2;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+a{
+	list-style: none;
+	text-decoration: none;	
+	color: black;
+	cursor: pointer;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+}
+
+.content{
+	display: flex;
+	width: 1100px;
+	background-color: white;
+}
+.content-left{
+	width: 150px;
+	border: 1px solid #B6B6B6;
+	padding: 25px;
+	/*height: 1000px;*/
+}
+
+.content-right{
+	width:850px;
+	padding: 0px 25px;
+	/*background-color: #245269;*/
+	/*height: 1000px;*/
+	border-right: 2px solid #BBBBBB;
+	border-bottom: 2px solid #BBBBBB;
+}
+.content-left .left-item li{
+	padding: 0px 25px;
+	list-style: afar;
+	width: 100px;
+	height: 29px;
+	line-height: 29px;
+}
+
+.content-left .left-item li a{
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.content-left .left-item li a:hover{
+	color: red;
+}
+
+
+.right-header{
+	display: flex;
+	width: 850px;
+	height: 42px;
+	justify-content: space-between;
+	border-bottom: 2px solid red;
+	margin-top: 25px;
+}
+.right-header a{
+	font-size: 12px;
+	color: #B2B2B2;
+}
+
+.singer-content{
+	margin-top: 15px;
+}
+.IfRuZhu{
+	margin-top: 5px;
+	width: 156px;
+	display: flex;
+	justify-content: space-between;
+}
+.IfRuZhu a{
+	cursor: pointer;
+	font-size: 12px;
+}
+.IfRuZhu i{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/icon.png) no-repeat 0px -740px;
+}
+
+.singer-content >ul{
+	width: 850px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.singer-content >ul>li{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.other-name{
+	margin-top: 50px;
+	border-top: 1px dashed #B2B2B2;
+	display: flex;
+	flex-wrap: wrap;
+}
+.other-name>li{
+	line-height: 50px;
+	height: 50px;
+	display: flex;
+	width: 156px;
+	margin-left: 40px;
+}
+.other-name>li>a:hover{
+	color: red;
+}
+.other-name i{
+	margin-top: 18px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/icon.png) no-repeat 0px -740px;
+}
+
+.search{
+	margin-top: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.search >li{
+	width: 40px;
+}

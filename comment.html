@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+}
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+a{
+	list-style: none;
+	text-decoration: none;	
+	color: black;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+}
+.comment-header{
+	display: flex;
+	margin-top: 20px;
+	width: 100%;
+	height: 60px;
+	line-height:70px;
+	border-bottom: 2px solid red;
+}
+
+.comment-num{
+	margin-left: 20px;
+}
+
+.comment-send{
+	margin-top: 10px;
+	display: flex;
+}
+.comment-send .send{
+	margin-left: 15px;
+}
+
+.comment-send .send textarea{
+	padding: 15px;
+	width: 535px;
+	outline: none;
+}
+
+.tijiao>button{
+	outline: none;
+	width: 46px;
+	height: 25px;
+	background-color: #408CD4;
+	outline-style: none;
+	border: 1px solid transparent;
+	color: white;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.tijiao{
+	display: flex;
+	justify-content: flex-end;
+}
+.tijiao>span{
+	line-height: 25px;
+	margin-right: 10px;
+	color: #BEBEBE;
+}
+.comment-all{
+	margin-top: 10px;
+}
+.comment-item{
+	display: flex;
+	padding: 15px 0px;
+	border-top: 1px dashed #BBBBBB;
+}
+
+.comment-content{
+	margin-left: 10px;
+}
+
+.time-others{
+	margin-top: 10px;
+	width: 540px;
+	display: flex;
+	justify-content: space-between;
+}
+.others{
+	display: flex;
+}
+.others>a>i{
+	display: block;
+	width: 15px;
+	height: 14px;
+	padding-right: 20px;
+	border-right: 1px solid #B2B2B2;
+	background: url(../img/icon2.png) no-repeat -150px 0px ;
+}
+
+.others>a{
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.time{
+	font-size: 12px;
+	color: #B2B2B2;
+}
+
+.fenye{
+	display: flex;
+	width: 600px;
+	justify-content: center;
+	margin-top: 200px;
+}
+.fenye>li{
+	margin-right: 5px;
+}
+.putong{
+	width: 23px;
+	height: 23px;
+}
+	</style>
+	<body>
+<!--		<div class="inner_c">-->
+		<div class="comment">
+			<div class="comment-header">
+				<h3><span>评论</span></h3>
+				<span class="comment-num">共173条评论</span>
+			</div>
+			<div class="comment-send">
+				<img src="http://p3.music.126.net/grn33mj2XWXl4dF_9fKt1A==/18832435162290226.jpg?param=50y50" style="width: 50px; height: 50px;"/>
+				<div class="send">
+					<textarea placeholder="评论..."></textarea>
+					<div class="tijiao">
+						<span>140</span>
+						<button type="button">
+							提交
+						</button>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="comment-all">
+				<div class="comment-item">
+					<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+					<div class="comment-content">
+						<a>名字:</a>123456789
+						<div class="time-others">
+							<span class="time">12月5日 12.05</span>
+							<div class="others">
+								<a href="#"><i></i></a>
+								<a>回复</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment-item">
+					<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+					<div class="comment-content">
+						<a>名字:</a>123456789
+						<div class="time-others">
+							<span class="time">12月5日 12.05</span>
+							<div class="others">
+								<a href="#"><i></i></a>
+								<a>回复</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment-item">
+					<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+					<div class="comment-content">
+						<a>名字:</a>123456789
+						<div class="time-others">
+							<span class="time">12月5日 12.05</span>
+							<div class="others">
+								<a href="#"><i></i></a>
+								<a>回复</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div >
+				<ul class="fenye">
+					<li class="shang"><button type="button"><上一页</button></li>
+					<li ><button type="button" class="putong">1</button></li>
+					<li ><button type="button" class="putong">2</button></li>
+					<li class="xia"><button type="button">下一页></button></li>
+				</ul>
+			</div>
+		</div>
+<!--		</div>-->
+	</body>
+</html>

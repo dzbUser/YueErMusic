@@ -1,0 +1,210 @@
+body{
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+a{
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;	
+	color: black;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+}
+
+.header{
+	height: 60px;
+	/*background-color: #282828;*/
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(36,36,36,0);
+    transition: background 1s ease-in;
+}
+
+.header1{
+	display: flex;
+}
+
+.header .header-name{
+	width: 160px;
+	height: 60px;
+	color: #aaa;
+	line-height: 60px;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.nav-user{
+	width: 920px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav{
+	color: white;
+	display: flex;
+}
+
+.nav li{
+	width: 88px;
+	height: 60px;
+	line-height: 60px;
+	margin-left: 88px;
+}
+
+.nav li a{
+	display: block;
+	width: 88px;
+	height: 58px;
+	color: #aaa;
+	font-size: 16px;
+	text-align: center;
+}
+.user{
+	display: flex;
+}
+.user a{
+	color: black;
+	font-size: 12px;
+}
+.user li{
+	line-height: 60px;
+	padding-right: 10px;
+}
+
+.join{
+	margin-top: 12px;
+}
+.join a{
+	
+	display: block;
+	width: 81px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ea524e;
+    border: 1px solid #8e413e;
+}
+
+
+
+.name a{
+	color:black;
+	padding-right: 10px;
+	border-right: 1px solid black;
+}
+.nav-user .active{
+	color: black;
+	border-bottom: 2px solid red;
+}
+
+.divList{
+	overflow: hidden;
+	width: 1100px;
+}
+
+.content{
+	width: 100%px;
+	height: 1100px;
+	background: url(../img/2.jpg) ;
+	background-size: auto 100%;
+}
+
+.find{
+	padding-top: 300px;
+	width: 1100px;
+	text-align: center;
+}
+.find>p{
+	font-size: 17px;
+}
+.search{
+	margin-top: 50px;
+	width: 1100px;
+	text-align: center;
+}
+.search input{
+	width: 500px;
+	padding: 10px;
+	height: 30px;
+}
+.search button{
+	cursor: pointer;
+	font-size: 20px;
+	width: 70px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	border: 1px solid transparent;
+}
+
+.tishi>p{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.find-content{
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	width: 1100px;
+	max-height: 340px;
+    overflow: auto;
+    border-bottom: 1px solid #ebebeb;
+}
+.item{
+	width: 200px;
+	text-align: center;
+}
+.item >p{
+	padding: 10px;
+}
+.find-content .item button{
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	height: 30px;
+	width: 60px;
+	border: transparent;
+}
+
+.find-content .item  .used{
+	cursor:auto;
+	background-color: gray;
+}
+
+.joinNow{
+	padding-top: 100px;
+}
+
+.joinNow>p{
+	font-size: 12px;
+	padding-bottom: 15px;
+}
+
+.joinNow button{
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	height: 40px;
+	width: 100px;
+	border: transparent;
+}

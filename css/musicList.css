@@ -1,0 +1,145 @@
+body{
+	background-color: #F2F2F2;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	list-style: none;
+	text-decoration: none;	
+	color: #000000;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+}
+
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.content{
+	width: 1000px;
+	padding: 50px;
+	height: 100%;
+}
+
+.nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav>li{
+	height: 20px;
+	line-height: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right: 1px solid #000000;
+}
+
+.header{
+	width: 1000px;
+	padding: 25px 0px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #31c27c;
+}
+.new-hot{
+	display: flex;
+}
+.new-hot>a{
+	display: block;
+	width: 30px;
+	height: 38px;
+	padding: 0px 16px;
+	border: 1px solid #B2B2B2;
+	font-size: 14px;
+	line-height: 38px;
+}
+.nav a:hover{
+	color: #31c27c;
+}
+.active{
+	background-color: #31c27c;
+	color: white;
+}
+
+.lists{
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.lists .item{
+	width: 180px;
+	height: 250px;
+	margin-left: 50px;
+}
+
+.item-pic{
+	display: flex;
+	width: 180px;
+	height: 180px;
+	position: relative;
+}
+.item-pic  .bottom{
+	display: flex;
+	justify-content: space-between;
+	width: 180px;
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.5);
+}
+.play-num{
+	display: flex;
+	margin-top: 5px;
+	color: white;
+	font-size: 12px;
+}
+.play-num>i{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: block;
+	width: 14px;
+	height: 11px;
+	background: url(../img/iconall.png) no-repeat  0px -24px;
+}
+
+.item-play{
+	margin-top: 5px;
+	margin-right: 10px;
+	display: block;
+	width: 16px;
+    height: 17px;
+    background: url(../img/iconall.png) no-repeat 0px 0px;
+}
+
+.item>p{
+	margin-top:5px;
+}
+
+.publisher{
+	font-size: 12px;
+	color: #B2B2B2;
+}
+
+.fenye{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 100px;
+}
+.fenye>li{
+	margin-right: 5px;
+}
+.putong{
+	width: 23px;
+	height: 23px;
+}

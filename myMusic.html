@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>排行榜</title>
+		<link rel="stylesheet" href="css/myMusic.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="jquery/jquery-3.2.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<script>
+		$(document).ready(function(){
+			$(".musicItem").mouseover(function(){
+//				console.log($(this).find(".del"));
+				$(this).find(".del").css("display","block");
+				$(this).css("background-color","#F2F2F2");
+			})
+			
+			$(".musicItem").mouseout(function(){
+//				console.log($(this).find(".del"));
+				$(this).find(".del").css("display","none");
+				$(this).css("background-color","white");
+			})
+		})
+	</script>
+	<body style="background-color: #F2F2F2;">
+		<div>
+			<div class="inner_c">
+				<div class="content">
+					<div class="content-left">
+						<div class="left-item">
+							<div class="item-header">
+								<div><h3>创建歌单</h3></div>
+								
+								<a><i>新建</i></a>
+							</div>
+							
+							<ul>
+								
+								<li class="musicItem">
+									<a><img src="http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=40y40" style="width: 50px; height: 50px;"></a>
+									<a>
+										<p>我喜欢的音乐</p>
+										<div class="lian-right">
+											<p class="qian font-15">102首</p>
+										</div>
+									</a>
+									<a class="del"></a>
+								</li>
+							</ul>
+						</div>
+						<div class="left-item">
+							<h3>收藏歌单</h3>
+							<ul>
+								<li class="musicItem">
+									<a><img src="http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=40y40" style="width: 45px; height: 45px;"></a>
+									<a>
+										<p>欧美新歌榜</p>
+										<div class="lian-right">
+											<p class="qian font-15">102首by asd</p>
+										</div>
+									</a>
+									<a class="del"></a>
+								</li >
+								<li class="musicItem">
+									<a><img src="http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=40y40" style="width: 45px; height: 45px;"></a>
+									<a>
+										<p>欧美新歌榜</p>
+										<div class="lian-right">
+											<p class="qian font-15">102首 by asd</p>
+										</div>
+									</a>
+									<a class="del"></a>
+								</li>
+								<li class="musicItem">
+									<a><img src="http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=40y40" style="width: 45px; height: 45px;"></a>
+									<a>
+										<p>欧美新歌榜</p>
+										<div class="lian-right">
+											<p class="qian font-15">102首 by asd</p>
+										</div>
+									</a>
+									<a class="del"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="content-right">
+						<div class="content-right-top">
+							<img src="http://p1.music.126.net/72VNhrAAbu4-WPXvcmiDhg==/19072128695485521.jpg?param=200y200" style="width: 150px;height: 150px;"/>
+							<div class="top-right">
+								<h3>云音乐飙升榜</h3>
+								<div class="sender">
+									<img src="http://p1.music.126.net/grn33mj2XWXl4dF_9fKt1A==/18832435162290226.jpg?param=200y200" style="width: 35px;height: 35px;" />
+									<p class="sender-name">名字</p>
+									<p class="time"> 2017-05-06</p>
+								</div>
+								<div class="ubotton">
+									<a href="#" class="a1">
+										<i>
+											<em class="ply"></em>
+											播放
+										</i>
+									</a>
+									<a href="#" class="a2">
+										
+									</a>
+									<a class="a3" href="#">
+										<i class="a3-a5-Stye">(123456)</i>
+									</a>
+									<a class="a6" href="#">
+										<i class="a3-a5-Stye">(123)</i>
+									</a>
+									<a class="a4">
+										<i class="a3-a5-Stye">下载</i>
+									</a>
+									<a class="a5 ">
+										<i class="a3-a5-Stye">(123)</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="content-right-bottom">
+							<div class="music-list">
+								<table class="table table-hover">
+								  <caption>
+								  	<div >
+								  		<h4 style="color: black;">歌曲列表</h4>
+								  		
+								  	</div>
+								  	<div style="display: flex; justify-content: space-between;">
+								  		<p>100首歌</p>
+								  		<p>播放量:6535</p>
+								  	</div>								  										  	
+								  </caption>
+								  <thead>
+								    <tr>
+								      <th class="th0"> </th>
+								      <th class="th1">标题</th>
+								      <th class="th0">时长</th>
+								      <th class="th0">歌手</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>1</td>
+								      <td>
+								      	<div style="display: flex; height: 100%; width: 100px; line-height: 20px;">
+								      		<i class="ply" ></i><a href="#" style="display:block; margin-top: 5px;">拥抱的月亮</a>
+								      	</div>	
+								      </td>
+								      <td>04：57</td>
+								      <td>定定</td>
+								    </tr>
+								    <tr>
+								      <td>1</td>
+								      <td >
+								      	<div style="display: flex; height: 100%; width: 100px; line-height: 20px;">
+								      		<i class="ply" ></i><a href="#" style="display:block; margin-top: 5px;">拥抱的月亮</a>
+								      	</div>								      	
+								      </td>
+								      <td>04：57</td>
+								      <td>定定</td>
+								    </tr>
+								    <tr>
+								      <td>1</td>
+								      <td><div style="display: flex; height: 100%; width: 100px; line-height: 20px;">
+								      		<i class="ply" ></i><a href="#" style="display:block; margin-top: 5px;">拥抱的月亮</a>
+								      	</div></td>
+								      <td>04：57</td>
+								      <td>定定</td>
+								    </tr>
+								  </tbody>
+								</table>
+							</div>
+							<div class="comment">
+								<div class="comment-header">
+									<h3><span>评论</span></h3>
+									<span class="comment-num">共173条评论</span>
+								</div>
+								<div class="comment-send">
+									<img src="http://p3.music.126.net/grn33mj2XWXl4dF_9fKt1A==/18832435162290226.jpg?param=50y50" style="width: 50px; height: 50px;"/>
+									<div class="send">
+										<textarea placeholder="评论..."></textarea>
+										<div class="tijiao">
+											<span>140</span>
+											<button type="button">
+												提交
+											</button>
+										</div>	
+									</div>
+								</div>
+								
+								<div class="comment-all">
+									<div class="comment-item">
+										<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+										<div class="comment-content">
+											<a>名字:</a>123456789
+											<div class="time-others">
+												<span class="time">12月5日 12.05</span>
+												<div class="others">
+													<a href="#"><i></i></a>
+													<a>回复</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment-item">
+										<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+										<div class="comment-content">
+											<a>名字:</a>123456789
+											<div class="time-others">
+												<span class="time">12月5日 12.05</span>
+												<div class="others">
+													<a href="#"><i></i></a>
+													<a>回复</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment-item">
+										<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+										<div class="comment-content">
+											<a>名字:</a>123456789
+											<div class="time-others">
+												<span class="time">12月5日 12.05</span>
+												<div class="others">
+													<a href="#"><i></i></a>
+													<a>回复</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div >
+									<ul class="fenye">
+										<li class="shang"><button type="button"><上一页</button></li>
+										<li ><button type="button" class="putong">1</button></li>
+										<li ><button type="button" class="putong">2</button></li>
+										<li class="xia"><button type="button">下一页></button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			function callParent(){
+				var fheight= document.body.scrollHeight;
+				parent.parentFunction(fheight);
+			}
+			callParent()
+		</script>
+	</body>
+</html>

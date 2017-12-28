@@ -1,0 +1,152 @@
+body{
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+a{
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;	
+	color: black;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+}
+
+.header{
+	height: 60px;
+	/*background-color: #282828;*/
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(36,36,36,0);
+    transition: background 1s ease-in;
+}
+
+.header1{
+	display: flex;
+}
+
+.header .header-name{
+	width: 160px;
+	height: 60px;
+	color: #aaa;
+	line-height: 60px;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+.nav-user{
+	width: 920px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav{
+	color: white;
+	display: flex;
+}
+
+.nav li{
+	width: 88px;
+	height: 60px;
+	line-height: 60px;
+	margin-left: 88px;
+}
+
+.nav li a{
+	display: block;
+	width: 88px;
+	height: 58px;
+	color: #aaa;
+	font-size: 16px;
+	text-align: center;
+}
+.user{
+	display: flex;
+}
+.user a{
+	color: white;
+	font-size: 12px;
+}
+.user li{
+	line-height: 60px;
+	padding-right: 10px;
+}
+
+.join{
+	margin-top: 12px;
+}
+.join a{
+	
+	display: block;
+	width: 81px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ea524e;
+    border: 1px solid #8e413e;
+}
+
+
+
+.name a{
+	color:white;
+	padding-right: 10px;
+	border-right: 1px solid white;
+}
+.nav-user .active{
+	color: white;
+	border-bottom: 2px solid red;
+}
+
+.divList{
+	overflow: hidden;
+	width: 1100px;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	background: url(../img/1.jpg) ;
+	background-size: auto 100%;
+}
+.div1{
+	width: 1100px;
+	height: 1100px;
+	
+}
+
+.huanyin{	
+	display: block;
+	margin-top: 200px;
+	background: url(../img/huanyin.jpg) no-repeat;
+	width: 1300px;
+	height: 600px;
+}
+
+.joinnow{
+	margin-left: 500px;
+	padding: 10px 20px;
+	width: 80px;
+	height: 30px;
+	display: block;
+	color: red;
+	font-size: 20px;
+	border: 2px solid red;
+}

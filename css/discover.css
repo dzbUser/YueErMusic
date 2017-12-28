@@ -1,0 +1,289 @@
+body{
+	background-color: #F2F2F2;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	list-style: none;
+	text-decoration: none;	
+	color: #000000;
+}
+a:hover{
+	list-style: none;
+	text-decoration: none;	
+}
+ul li{
+	list-style: none;	
+	text-align:center 
+}
+
+.inner_c{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.songSheet .songSheet-title{
+	padding-top: 45px;
+	/*padding-left: 45%;*/
+	height: 40px;
+	line-height: 40px;
+	/*background-color: darkgray;*/
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.songSheet .songSheet-content{
+	text-align: center;
+	height: 450px;
+	background-color: white;
+}
+/*.songSheet .songSheet-content .nav{
+	text-align: center;
+}*/
+/*.songSheet .songSheet-content */.nav ul{
+	display: flex;
+}
+
+/*.songSheet .songSheet-content */.nav ul li{
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+}
+
+.songSheet .songSheet-item{
+	width: 1100px;
+	height: 305px;
+}
+.imgList{
+	overflow: hidden;
+	width: 1100px;
+	height: 305px;	
+}
+.imgList > ul{
+	display: flex;
+	width: 1100px;
+}
+
+.imgList >ul >li{
+	width: 1100px;
+} 
+.songSheet .item > ul{
+	display: flex;
+	width: 1100px;
+}
+
+.songSheet .item >ul > li{
+	width:224px;
+	padding-right: 24px;
+}
+
+
+.songSheet .item dl dt{
+	padding-top: 10px;
+}
+.qian{
+	color:#999999 ;
+}
+.nav-list,.nav-list1{
+	width: 1100px;
+	margin-top: 20px;
+	text-align: center;
+}
+.nav-list ul,.nav-list1 ul{
+	width: 28px;
+	margin: 0 auto;
+	/*margin-left: 550px;*/
+}
+.nav-list ul li,.nav-list1 ul li{
+   background-color: #E6E6E6;
+   float: left;
+   width:8px;
+   height:8px;
+   border-radius: 50%;
+   margin-right: 4px;
+   font-size: 0px;
+}
+ .nav-list ul li.active, .nav-list1 ul li.active{
+ 	background-color: #B2B2B2;
+ }
+ 
+.left,.right,.left1,.right1{
+	line-height: 60px;
+	text-align: center;
+	color: #9D9D9D;
+	background-color: #D9D9D9;
+	width: 38px;
+	height: 60px;
+}
+.songSheet-item{
+	position: relative;
+}
+.left{
+	position: absolute;
+	top: 100px;
+	left: -100px;
+}
+
+.right{
+	position: absolute;
+	top: 100px;
+	right: -100px;
+}
+
+.song-sort-content{
+	height: 480px;
+	background-color: white;
+}
+
+.song-sort .song-sort-item{
+	position: relative;
+	width: 1100px;
+	height: 300px;
+}
+.imgList1{
+	overflow: hidden;
+	width: 1100px;
+	height: 300px;	
+}
+.imgList1 > ul{
+	display: flex;
+	width: 1100px;
+}
+.imgList1 > ul >li{
+	width: 1100px;
+}
+.left1{
+	position: absolute;
+	top: 130px;
+	left: -100px;
+}
+
+.right1{
+	position: absolute;
+	top: 130px;
+	right: -100px;
+}
+
+
+
+.song-sort-lists{
+	width: 1100px;
+}
+.song-sort-lists>ul{
+	width: 1100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+.song-sort-lists>ul>li{
+	width: 366.66px;
+}
+.song-sort-list{
+	width: 366.66px;height: 100px;
+	overflow: hidden;
+}
+.song-sort-list a{
+	display: flex;
+}
+.song-sort-list .list-cont{
+	overflow: hidden;
+	text-align: left;
+	font-size: 14px;
+	width: 150px;
+	height: 65px;
+}
+
+.song-sort-list .list-cont h4{
+	padding: 10px;
+}
+.song-sort-list .list-cont p{
+	padding-left: 10px;
+}
+
+
+/*.test1{
+	width: 1100px;
+	overflow: hidden;
+	height: 300px;
+}
+
+.test1 ul{
+	width: 1100px;
+	display: flex;
+}
+
+.test1 ul li{
+	width: 1100px;
+	height: 300px;
+}
+
+*/
+
+.songList-content{
+	height: 500px;
+	background-color: white;
+	padding: 25px;
+}
+.lists-play{
+	display: flex;
+	justify-content: flex-end;
+}
+.lists-play .play{
+	display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    background: url(../img/index.png) no-repeat 0 9999px;
+    background-position: -267px -205px;
+}
+.lists-play .sava{
+	display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    background: url(../img/index.png) no-repeat 0 9999px;
+    background-position: -300px -205px;
+}
+
+.lists{
+	width: 224px;
+	height: 470px;
+	padding: 15px;
+	border: 1px solid #bbb;
+	margin-right: 25px;
+}
+
+.lists>ul>li{
+	text-align: left;
+	padding-left: 25px;
+	height: 42px;
+	line-height: 42px;
+}
+
+.lists>ul>li>a{
+	cursor: pointer;
+	width: 224px;
+	height: 42px;
+	color: #bbb;
+}
+.lists>ul>li>a:hover{
+	color: black;
+}
+.lists>ul>li>a>i{
+	display: inline-block;
+	text-align: right;
+	width: 15px;
+	padding-right: 15px;
+}
+
+.lists>ul>li>a>.listActive{
+	color: red;
+}
+
+.allList{
+	display: flex;
+}
