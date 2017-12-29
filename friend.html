@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/friend.css" />
+	<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>-->
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js" ></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#send1").mousedown(function(){
+				$('#kuang').css("display","block");
+			})
+			
+			$("#close").mousedown(function(){
+				$('#kuang').css("display","none");
+			})
+			
+			$("#close1").mousedown(function(){
+				$('#kuang').css("display","none");
+			})
+			
+			$("#addMusic").mousedown(function(){
+				$('#kuang').css("display","none");
+				$('#kuang1').css("display","block");
+			})
+			
+			$("#fanhui").mousedown(function(){
+				$('#kuang1').css("display","none");
+				$('#kuang').css("display","block");
+			})
+			
+			$("#search li:even").css("background","#F2F2F2");
+			changeStyle(0);
+			function changeStyle(num){
+				var lis=$("#choose li");
+				for(var i=0;i<lis.length;i++)
+				{
+					if(i==num){
+						$(lis[i]).css("border-bottom","transparent");
+						$(lis[i]).css("border-top","1px solid red")
+					}
+				}
+			}
+		})
+		
+	</script>
+	<body>
+		<div class="inner_c">
+			<div class="content">
+				<div class="content-left">
+					<div class="left-header">
+						<h3>动态</h3>
+						<div class="sendShare">
+							<span class="send1" id="send1"></span>
+							<span class="send2"></span>
+						</div>
+					</div>
+					<!--
+                    	作者：offline
+                    	时间：2017-12-29
+                    	描述：发送视频
+                    -->
+					<div class="send-content">
+						<div class="user-love">
+							<div class="user">
+								<img src="http://p1.music.126.net/PtI3WbIcMlswRjwi3hWJ3Q==/18946784370278536.jpg?param=45y45" style="width: 50px;height: 50px;"/>
+								<div class="name">
+									<a>歌手王强</a>
+									<p>刚刚</p>
+								</div>
+							</div>
+							<div class="love">
+								<a>关注</a>
+							</div>
+						</div>
+						<div class="zhong">
+							<p class="title">王强秋天不回来演唱会-宝贝都是我的错</p>
+							<video class="media" src="http://vodkgeyttp8.vod.126.net/vodkgeyttp8/RU4it6gL_38614783_shd.mp4?wsSecret=f22ef6abad81429fc59bf217e7b9dc84&amp;wsTime=1514512479" width="565px" height="318" controls="controls" poster="http://p1.music.126.net/VHrlmA4nwb5kQfaxBM3N2g==/109951163057863029.jpg"></video>
+						</div>
+						<div class="bottom">
+							<div class="bottom-content">
+								<a><i></i>  (123)</a>
+							</div>
+						</div>
+					</div>
+					
+					<!--
+                    	作者：offline
+                    	时间：2017-12-29
+                    	描述：发送音乐
+                    -->
+					<div class="send-content">
+						<div class="user-love">
+							<div class="user">
+								<img src="http://p1.music.126.net/PtI3WbIcMlswRjwi3hWJ3Q==/18946784370278536.jpg?param=45y45" style="width: 50px;height: 50px;"/>
+								<div class="name">
+									<a>歌手王强</a>
+									<p>刚刚</p>
+								</div>
+							</div>
+							<div class="love">
+								<a>关注</a>
+							</div>
+						</div>
+						<div class="zhong">
+							<p class="title">别交头接耳啦，再不开唱，雨就下大啦🎤</p>
+							<div class="music-content">
+								<a><i></i></a>
+								<a><img src="http://p1.music.126.net/fzTs0zRD3PQxCKBo4yHvUQ==/3389794349236019.jpg?param=40y40&quality=100"/></a>
+								<div class="music-title">
+									<p><a>步步高(feat. 林依轮 & 高林生)</a></p>
+									<p class="font-15-qian">景岗山/林依轮/高林生</p>
+								</div>
+							</div>
+							<div class="imgs">
+								<img src="http://p1.music.126.net/85oRys8_6VpkbeFgeij3Pg==/109951163094325415.jpg?param=338x0&quality=100" style="width: 400px;height: 300px;"/>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="bottom-content">
+								<a><i></i>  (123)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="right-top">
+						<div class="right-user">
+							<img src="http://p1.music.126.net/grn33mj2XWXl4dF_9fKt1A==/18832435162290226.jpg?param=70y70" style="width: 70px; height: 70px;"/>
+							<p><a href="">让我给你柠檬</a></p>
+						</div>
+						<ul class="f-cd">
+							<li>
+								<a>
+									<em>0</em>
+									<i>动态</i>
+								</a>
+							</li>
+							<li>
+								<a>
+									<em>2</em>
+									<i>关注</i>
+								</a>
+							</li>
+							<li>
+								<a>
+									<em>0</em>
+									<i>粉丝</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="right-bottom">
+						<div class="r-b-h">
+							<h4>明星用户</h4>
+							<a>换一批</a>
+						</div>
+						<div class="r-b-bo">
+							<img src="http://p4.music.126.net/TfiLQfZHdT7xbzTIcUa1tw==/109951163004768299.jpg?param=45y45" style="width: 45px; height: 45px;" />
+							<div class="bo-ri">
+								<div class="bo-title">
+									<p><a>品冠victor</a></p>
+									<p class="font-15-qian">台湾流行歌手品冠</p>
+								</div>
+								<div class="love">
+									<a >关注</a>
+								</div>
+							</div>
+						</div>
+						<div class="r-b-bo">
+							<img src="http://p4.music.126.net/TfiLQfZHdT7xbzTIcUa1tw==/109951163004768299.jpg?param=45y45" style="width: 45px; height: 45px;" />
+							<div class="bo-ri">
+								<div class="bo-title">
+									<p><a>品冠victor</a></p>
+									<p class="font-15-qian">台湾流行歌手品冠</p>
+								</div>
+								<div class="love">
+									<a >关注</a>
+								</div>
+							</div>
+						</div>
+						<div class="r-b-bo">
+							<img src="http://p4.music.126.net/TfiLQfZHdT7xbzTIcUa1tw==/109951163004768299.jpg?param=45y45" style="width: 45px; height: 45px;" />
+							<div class="bo-ri">
+								<div class="bo-title">
+									<p><a>品冠victor</a></p>
+									<p class="font-15-qian">台湾流行歌手品冠</p>
+								</div>
+								<div class="love">
+									<a >关注</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="inner_c">
+			<div class="share-kuang" id="kuang">
+				<div class="share-header">
+					<h4>分享</h4>
+					<span class="close" id="close">
+						
+					</span>
+				</div>
+				<div class="input-content">
+					<div class="edit-content">
+						<textarea class="input-kuang" placeholder="一起聊聊音乐....."></textarea>
+						<div class="addMusic" id="addMusic">
+							<i></i>
+							<a>给动态配上音乐</a>
+						</div>
+					</div>
+					<a class="getPic" onclick="$('input[id=getPicture]').click();">添加图片</a>
+					<input type="file" style="display: none;" id="getPicture"/>
+					<div class="share-bo">
+						<button type="button" >分享</button>
+						<button type="button" class="button1" id="close1">取消</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="share-kuang1" id="kuang1">
+				<div class="share-header">
+					<h4>添加音乐</h4>
+					<span class="close" id="close1">
+						
+					</span>
+				</div>
+				<div class="input-content1">
+					<div class="edit-content1">
+						<input type="text"/>
+						<ul class="choose" id="choose">
+							<li><a>单曲</a></li>
+							<li><a>歌手</a></li>
+							<li><a>歌单</a></li>
+							<li><a>其他</a></li>
+						</ul>
+						<ul class="search-content" id="search">
+							<li>
+								<a>
+									<div class="search-item">
+										<div class="music-name">
+											<i></i><p>歌曲1</p>
+										</div>
+										<p>张正月</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a>
+									<div class="search-item">
+										<div class="music-name">
+											<i></i><p>歌曲1</p>
+										</div>
+										<p>张正月</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a>
+									<div class="search-item">
+										<div class="music-name">
+											<i></i><p>歌曲1</p>
+										</div>
+										<p>张正月</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a>
+									<div class="search-item">
+										<div class="music-name">
+											<i></i><p>歌曲1</p>
+										</div>
+										<p>张正月</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				<button type="button" class="fanhui" id="fanhui">返回</button>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+			function callParent(){
+				var fheight= document.body.scrollHeight;
+				parent.parentFunction(fheight);
+			}
+			callParent()
+	</script>	
+	</body>
+</html>
