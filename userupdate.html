@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/userupdate.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="inner_c">
+				<div class="header-name">
+					HappyMusic
+				</div>
+				<div class="nav" id="nav"> 
+					<ul>
+						<li><a href="#">发现音乐</a></li>
+						<li><a href="#">我的音乐</a></li>
+						<li><a href="#">朋友</a></li>
+						<li><a href="#">音乐人</a></li>
+					</ul>
+				</div>
+				<div class="header-right">
+					<div class="header-find">
+						<label></label>
+						<input type="text" />
+						
+						<div class="find-content">
+							<p>查找内容></p>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">单曲</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">歌单</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">歌手</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="find-item">
+								<div class="find-hd">
+									<h6 class="hd">视频</h1>
+								</div>
+								<div class="find-item-content">
+									<ul>
+										<li><a href="#">例子1</a></li>
+										<li><a href="#">例子1</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="header-vdieo">
+						<a href="#">视频上传</a>
+					</div>
+					<!--<div class="header-user  id="user1">
+						<div v-if="seen">
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513744134400&di=ddc31b1abf8d190610bbc45247669122&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-02-02%2F211841154.jpg" />
+							让我给你柠檬
+						</div>
+						<div v-else>
+							<a href="#" >登录</a>
+						</div>
+					</div>-->
+					<div class="header-user" id="user1">
+						<div v-if="seen">
+							<a href="#">
+								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513744134400&di=ddc31b1abf8d190610bbc45247669122&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-02-02%2F211841154.jpg" />
+							</a>
+						</div>
+						<div v-else>
+							<a href="#" >登录</a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="g-bd">
+			<div class="g-wrap">
+				<div class="u-title">
+					<h3>
+						<span class="f-ff2">个人设置</span>
+					</h3>
+				</div>
+				<ul class="m-tabs">
+					<li class="fst">
+						<a href="#" class="z-slt"><!--/*z-slt是选中的按钮*/-->
+							<em>基本设置</em>
+						</a>
+					</li>
+				</ul>
+				<form onsubmit="return false"id="#">
+					<div class="n-base f-cb">
+						<div class="frm m-frm">
+							<div class="itm">
+								<label class="lab">昵称：</label>
+								<input type="text" class="u-txt" value="xxhehe">
+								<!--js返回弹出提示-->
+								<div class="u-err">
+									<i class="u-icn"></i>
+									<span>错误！错误！错误！</span>
+								</div>
+							</div>
+							<div class="itm f-cb">
+								<label class="lab">介绍：</label>
+								<div class="u-txtwrap">
+									<textarea class="u-txt area" id="#"></textarea>
+								</div> 
+							</div>
+							<div class="itm f-cb">
+								<lab class="lab">性别：</lab>
+								<div class="f-cb">
+									<label class="check">
+										<input class="u-rdi" name="gender" value="1" type="radio">男
+									</label>
+									<label class="check">
+										<input class="u-rdi" name="gender" value="2" type="radio">女
+									</label>
+									<label class="check">
+										<input class="u-rdi" name="gender" value="3" type="radio">保密
+									</label>
+								</div>
+							</div>
+							<div class="itm f-cb" style="z-index: 11;">
+								<label class="lab">生日：</label>
+								<div class="u-slt u-slt-2 f-pr  btn-year" id="yselect">
+									<span class="curr" id="curr1">--</span>
+									<i id="#" class="btn"></i>
+									<ul class="year" id="year">
+										<li id="2016">
+											<a href="#">2016</a>
+										</li>
+										<li id="2015">
+											<a href="#">2015</a>
+										</li>
+										<li id="2014">
+											<a href="#">2014</a>
+										</li>
+										<li id="2013">
+											<a href="#">2013</a>
+										</li>
+										<li id="2012">
+											<a href="#">2012</a>
+										</li>
+										<li id="2011">
+											<a href="#">2011</a>
+										</li>
+										<li id="2010">
+											<a href="#">2010</a>
+										</li>
+										<li id="2009">
+											<a href="#">2009</a>
+										</li>
+									</ul>
+								</div>
+								<span class="wrd f-ff1">年</span>
+								<div class="u-slt u-slt-2 f-pr btn-month" id="mselect">
+									<span class="curr" id="curr2">--</span>
+									<i id="#" class="btn"></i>
+									<ul class="month" id="month">
+										<li id="01">
+											<a href="#">01</a>
+										</li>
+										<li id="02">
+											<a href="#">02</a>
+										</li>
+										<li id="03">
+											<a href="#">03</a>
+										</li>
+										<li id="04">
+											<a href="#">04</a>
+										</li>
+										<li id="05">
+											<a href="#">05</a>
+										</li>
+										<li id="06">
+											<a href="#">06</a>
+										</li>
+										<li id="07">
+											<a href="#">07</a>
+										</li>
+										<li id="08">
+											<a href="#">08</a>
+										</li>
+										<li id="09">
+											<a href="#">09</a>
+										</li>
+										<li id="10">
+											<a href="#">10</a>
+										</li>
+										<li id="11">
+											<a href="#">11</a>
+										</li>
+										<li id="12">
+											<a href="#">12</a>
+										</li>	
+									</ul>
+								</div>
+								<span class="wrd f-ff1">月</span>
+								<div class="u-slt u-slt-2 f-pr btn-day" id="dselect">
+									<span class="curr" id="curr3">--</span>
+									<i id="#" class="btn"></i>
+									<ul class="day" id="day">
+										<li id="01">
+											<a href="#">01</a>
+										</li>
+										<li id="02">
+											<a href="#">02</a>
+										</li>
+										<li id="03">
+											<a href="#">03</a>
+										</li>
+										<li id="04">
+											<a href="#">04</a>
+										</li>
+										<li id="05">
+											<a href="#">05</a>
+										</li>
+										<li id="06">
+											<a href="#">06</a>
+										</li>
+										<li id="07">
+											<a href="#">07</a>
+										</li>
+										<li id="08">
+											<a href="#">08</a>
+										</li>
+										<li id="09">
+											<a href="#">09</a>
+										</li>
+										<li id="10">
+											<a href="#">10</a>
+										</li>
+										<li id="11">
+											<a href="#">11</a>
+										</li>
+										<li id="12">
+											<a href="#">12</a>
+										</li>	
+									</ul>
+								</div>
+								<span class="wrd f-ff1">日</span>
+							</div>
+							<div class="itm f-cb" style="z-index: 10;">
+								<label class="lab">地区：</label>
+								<div class="u-slt f-pr" id="pselect">
+									<span class="curr">广东省</span>
+									<i id="#" class="btn"></i>
+								</div>
+								<div class="u-slt f-pr" id="cselect">
+									<span class="curr">广州市</span>
+									<i id="#" class="btn"></i>
+								</div>
+							</div>
+							<div class="itm ft he">
+								<a class="u-btn2 u-btn2-2 u-btn2-w2" hidefocus="true" href="#" data-action="save">
+									<i>保存</i>
+								</a>
+							</div>
+						</div>
+						<div class="avatar f-pr">
+							<img id="avatar" src="img/test-logo.jpg">
+							<span class="btm">
+							</span>
+							<a id="upload" class="upload" href="#">更换头像</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript"src="jquery/jquery-3.2.1.min.js"></script>
+		<script>
+			$(function(){
+				$(".btn-year").click(function(){
+					$(".year").slideToggle();
+				})
+				$(".btn-month").click(function(){
+					$(".month").slideToggle();
+				})
+				$(".btn-day").click(function(){
+					$(".day").slideToggle();
+				})
+			});
+
+		</script>
+		<script>
+      			 $(document).ready(function(){
+	              var Uarry=$("#year li");//获取所有的li元素
+//	              alert(132);
+	              $("#year li").click(function(){//点击事件
+	                   //测试直接获取值 var v=$(this).text(); alert(v);      
+//	                   alert(123);
+	                   var count=$(this).index();//获取li的下标
+	                   var Tresult=Uarry.eq(count).text();
+	                   $("#curr1").text(Tresult);
+	                   var haha = $("#curr1").text();
+//	                   alert(haha);
+            		  }) 
+      			 })
+   		</script>
+		<script>
+      			 $(document).ready(function(){
+	              var Uarry=$("#month li");//获取所有的li元素
+//	              alert(132);
+	              $("#month li").click(function(){//点击事件
+	                   //测试直接获取值 var v=$(this).text(); alert(v);      
+//	                   alert(123);
+	                   var count=$(this).index();//获取li的下标
+	                   var Tresult=Uarry.eq(count).text();
+	                   $("#curr2").text(Tresult);
+	                   var haha = $("#curr2").text();
+//	                   alert(haha);
+            		  }) 
+      			 })
+   		</script>
+   		<script>
+      			 $(document).ready(function(){
+	              var Uarry=$("#day li");//获取所有的li元素
+//	              alert(132);
+	              $("#day li").click(function(){//点击事件
+	                   //测试直接获取值 var v=$(this).text(); alert(v);      
+//	                   alert(123);
+	                   var count=$(this).index();//获取li的下标
+	                   var Tresult=Uarry.eq(count).text();
+	                   $("#curr3").text(Tresult);
+	                   var haha = $("#curr3").text();
+//	                  /
+            		  }) 
+      			 })
+   		</script>
+	</body>
+</html>

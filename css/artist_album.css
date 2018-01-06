@@ -1,0 +1,53 @@
+.m-cvrlst {
+	margin: 20px 0 0 -18px;
+}
+.m-cvrlst li {
+	width: 145px;
+	height: 175px;
+	padding-left: 18px;
+	float: left;
+	overflow: hidden;
+	padding: 0 0 30px 18px;
+}
+.m-cvrlst .u-cover {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	
+}
+.m-cvrlst img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.m-cvrlst .msk {
+	display: block;
+	width: 145px;
+	height: 120px;
+	background: url(../img/coverall.png) no-repeat -170px -850px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.m-cvrlst .icon-play {
+	display: none;
+	width: 28px;
+	height: 28px;
+	background: url(../img/iconall.png) no-repeat 0 -140px;
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+.m-cvrlst .dec {
+	line-height: 19px;
+	margin: 8px 0 3px;
+	font-size: 14px;
+	width: 100%;
+}
+.dec a {
+	color: black;
+}
+.m-cvrlst .dec a:hover {
+	color: black;
+	text-decoration: underline;
+}

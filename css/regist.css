@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+.m-input{
+	width: 350px;
+	height: 450px;
+	margin: 0 auto;
+	border: 2px solid black;
+	background-color: #808080;
+	margin-top: 10px;
+}
+.m-input input {
+	margin-top: 15px;
+	margin-left: 70px;
+	
+}
+.m-input span{
+	margin-left: 70px;
+}
+.u-input{
+	display: inline-block;
+	width: 210px;
+	height: 30px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.btns{
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	border:none;
+	border: 2px solid black;
+	
+}

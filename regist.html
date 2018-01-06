@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/regist.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<div class="m-input">
+				<form action="" method="post">
+				<input type="text" class="u-input" name="userid" placeholder="账号" /><br />
+				<span id="uidMsg"></span>
+				<input type="text" class="u-input" name="username" placeholder="用户名" /><br />
+				<span id="unameMsg"></span>
+				<input type="password" class="u-input" name="passwd" placeholder="密码" /><br />
+				<span id="upasswdMsg"></span>
+				<input type="password" class="u-input" name="passwd2" placeholder="确认密码" /><br />
+				<span id="upasswd2Msg"></span><br />
+				<input type="radio" checked="checked" id="men" name="sex" value="boy"/><label for="men">&nbsp;男</label>
+				<input type="radio" id="women" name="sex" value="girl"/><label for="women">&nbsp;女</label><br />
+				<input type="text" class="u-input" id="" name="email" placeholder="邮箱"/><br />
+				<span id="uemailMsg"></span><br />
+				<input type="submit" class="btns"  value="注册"/>
+				<input type="reset" class="btns" value="重置"/>
+				
+				</form>
+				
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			/*用户账号*/
+			var userid=document.getElementsByName("userid")[0];
+			userid.onblur=function(){
+				var strValue= this.value;
+       			var span= document.getElementById("uidMsg");
+       			if(strValue==null || strValue.length==0){
+       				span.innerHTML="账号不能为空";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else{
+       				span.innerHTML="";
+       				this.style.border="2px solid black";
+       			}
+			}
+			
+			/*用户名验证*/
+			var username=document.getElementsByName("username")[0];
+			username.onblur=function(){
+				var strValue=this.value;
+				var span=document.getElementById("unameMsg");
+				if(strValue==null || strValue.length==0){
+       				span.innerHTML="用户名不能为空";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else{
+       				span.innerHTML="";
+       				this.style.border="2px solid black";
+       			}
+			}
+			
+			/*密码验证*/
+			var passwd=document.getElementsByName("passwd")[0];
+			var passwd2=document.getElementsByName("passwd2")[0];
+			passwd.onblur=function(){
+				var strValue=this.value;
+				var span=document.getElementById("upasswdMsg");
+				if(strValue==null || strValue.length==0){
+       				span.innerHTML="密码不能为空";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else{
+       				span.innerHTML="";
+       				this.style.border="2px solid black";
+       			}
+				
+			}
+			passwd2.onblur=function(){
+				var strValue=this.value;
+				var strpasswd=passwd.value;
+				var span=document.getElementById("upasswd2Msg");
+				if(strValue==null || strValue.length==0){
+       				span.innerHTML="确认密码不能为空";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else if(strValue!=strpasswd){
+       				span.innerHTML="两次密码不一致";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else{
+       				span.innerHTML="";
+       				this.style.border="2px solid black";
+       			}
+				
+			}
+			
+			/*邮箱验证*/
+			var eamil=document.getElementsByName("email")[0];
+			
+			eamil.onblur=function(){
+				var strValue=this.value;
+				
+				var span=document.getElementById("uemailMsg");
+				
+				 // 邮箱的规则：4596787@qq.com   Xieguirong@chinasofti.com
+				var  reg=/^[0-9A-z_-]+[@][0-9A-z_-]+[.][0-9A-z_-]+$/;
+
+				if(strValue==null || strValue.length==0){
+       				span.innerHTML="邮箱不能为空";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else if(!reg.test(strValue)){
+       				span.innerHTML="邮箱格式有误";
+       				span.style.color="red";
+       				/*span.style.fontSize="10px";*/
+       				this.style.border="2px solid red";
+       			}else{
+       				span.innerHTML="";
+       				this.style.border="2px solid black";
+       			}
+				
+			}
+			
+		</script>
+	</body>
+</html>

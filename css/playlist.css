@@ -1,0 +1,240 @@
+.m-playlist {
+	width: 980px;
+	min-height: 700px;
+	margin: 0 auto;
+	border: 1px solid #d3d3d3;
+	border-width: 0 1px;
+}
+.m-wrap {
+	padding: 47px 30px 40px 39px;
+}
+.m-info {
+	margin-bottom: 30px;
+}
+.cover {
+	float: left;
+	position: relative;
+	display: inline;
+	margin: 0 -220px 0 0;
+}
+.cover img {
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+.cover .msk {
+	display: block;
+	width: 208px;
+	height: 208px;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	background: url(../img/coverall.png) no-repeat 0 -1285px;
+}
+
+.cnt {
+	float: right;
+	width: 100%;
+}
+.cnt .cntc {
+	margin-left: 230px;
+}
+.cntc .hd {
+	position: relative;
+	margin: 0 0 12px;
+	line-height: 24px;
+}
+.cntc .hd i {
+	display: block;
+	float: left;
+	width: 54px;
+	height: 24px;
+	background: url(../img/icon.png) no-repeat 0 -243px;	
+}
+.cntc .hd .tt {
+	margin-left: 64px;
+}
+.tt h2 {
+	line-height: 24px;
+	font-size: 20px;
+	font-weight: normal;
+	color: black;
+}
+.user {
+	margin: 0 0 20px;
+	line-height: 35px;
+}
+.user a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.user a img {
+	width: 35px;
+	height: 35px;
+}
+.user span.name {
+	float: left;
+}
+.user .name a {
+	color: #0c73c2;
+}
+.user .name a:hover {
+	text-decoration: underline;
+}
+.user span.time {
+	margin-left: 15px;
+}
+.btns {
+	margin-bottom: 25px;
+	margin-right: -10px;
+}
+a.btn {
+	background: url(../img/button2.png) no-repeat right -428px;
+	float: left;
+	color: #FFFFFF;
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	cursor: pointer;
+}
+
+a.btn > i {
+	padding: 0 7px 0 8px;
+	width: 61px;
+	background: url(../img/button2.png) no-repeat 0 -633px;
+	display: block;	
+}
+a.btn i em {
+	padding-left: 15px;
+}
+
+
+a.btn:hover i{
+	background: url(../img/button2.png) no-repeat 0 -719px;
+}
+
+a.add {
+	display: block;
+	float: left;
+	width: 31px;
+	height: 31px;
+	;line-height: 30px;
+	margin-left: -3px;
+	margin-right: 5px;
+	background: url(../img/button2.png) no-repeat 0 -1588px;
+}
+
+a.add:hover {
+	background-position: -80px -1588px;
+}
+a.col {
+	color: black;
+	display: block;
+	margin-right: 6px;
+	float: left;
+	height: 31px;
+	width: 106px;
+	background: url(../img/button2.png) no-repeat right -1020px;
+}
+a.col i {
+	float: left;
+    height: 31px;
+    width: 60px;
+    line-height: 30px;
+    min-width: 23px;
+    cursor: pointer;
+    padding: 0 7px 0 36px;
+    background: url(../img/button2.png) no-repeat 0 -977px;
+}
+a.col:hover i {
+	color: black;
+	background-position: 0 -1063px;
+}
+a.comm {
+	margin-right: 6px;
+	background: url(../img/button2.png) no-repeat right -1020px;
+	display: block;
+	float: left;
+	height: 31px;
+	width: 67px;
+	padding: 0 5px 0 0;
+}
+a.comm i {
+	padding-right: 2px;
+	padding-left: 28px;
+	background: url(../img/button2.png) no-repeat 0 -1465px;
+	float: left;
+	height: 31px;
+	width: 38px;
+	line-height: 30px;
+}
+.tags {
+	margin: 25px 0 5px;
+	line-height: 22px;
+}
+.tags b {
+	float: left;
+	padding-right: 5px;
+}
+.tags a {
+	float: left;
+	margin: 0 10px 3px 0;
+	padding: 0 10px 0 0;
+	background: url(../img/button2.png) no-repeat right -27px;
+}
+.tags i {
+	display: block;
+	height: 22px;
+	padding: 0 3px 0 13px;
+	line-height: 22px;
+	background: url(../img/button2.png) no-repeat 0 0;
+}
+.intr {
+	margin-top: 4px;
+	line-height: 18px;
+}
+/*
+.m-table tr:first-child {
+	background-color: white;
+	border: 1px solid red;
+}
+*/
+
+/*表单标题*/
+.u-title {
+	height: 33px;
+	border-bottom: 2px solid #c20c0c;
+}
+.u-title h3 {
+	font-size: 20px;
+	line-height: 28px;
+	float: left;
+}
+.u-title span.sub {
+	margin: 9px 0 0 20px;
+	float: left;
+}
+.u-title .playNum {
+	margin-top: 5px;
+	float: right;
+}
+thead tr {
+	background-color: #F7F7F7;
+	/*border: 1px solid #ccc;*/
+}
+thead tr td {
+	border: 1px solid #ccc;
+}
+tr{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+table tr:last-child {
+	border-bottom: 1px solid #ccc;
+}
+.playlist-comment {
+	width: 700px;
+	margin: 0 auto;
+}

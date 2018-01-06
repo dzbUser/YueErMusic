@@ -1,0 +1,126 @@
+table.m-table {
+	font-size: 12px;
+	border: none;
+	width: 100%;
+}
+table.m-table td {
+	padding: 6px 10px;
+	line-height: 18px;
+	text-align: left;
+}
+td.w1 {
+	width: 74px;
+}
+.ply {
+	display: block;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	background: url(../img/table.png) no-repeat 0 -103px;
+	float: right;
+}
+.ply:hover {
+	background-position: 0 -128px;
+}
+.num {
+	display: block;
+	width: 25px;
+	margin-left: 5px;
+	color: #999;
+	
+}
+td.w2 {
+	width: 289px;
+}
+td.w2 div.tt {
+	float: left;
+	width: 309px;
+	height: 18px;
+}
+.w2 .tt .ttc {
+	margin-right: 20px;
+	height: 18px;
+}
+.tt .ttc .txt a {
+	display: block;
+	padding-right: 10px;
+	float: left;
+}
+.txt a b {
+	font-weight: normal;
+}
+.tt .ttc .txt a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+.mv {
+	display: block;
+	float: left;
+	width: 23px;
+	height: 17px;
+	margin: 1px 0 0 0;
+	background: url(../img/table.png) no-repeat 0 -151px;
+}
+.mv:hover {
+	background-position: -30px -151px;
+}
+
+.w3 {
+	width: 96px;
+}
+.w3 .opt {
+	display: none;
+	float: left;
+}
+.icn-add {
+	float: left;
+	width: 13px;
+	height: 13px;
+	background: url(../img/icon.png) no-repeat 0 -700px;	
+}
+.icn-add:hover {
+	background-position: -22px -700px;
+}
+.icn {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 16px;
+	margin: 0px 0 0 4px;
+	overflow: hidden;
+}
+.icn-fav {
+	background: url(../img/table.png) no-repeat 0 -174px;
+}
+.icn-fav:hover {
+	background-position: -20px -174px;
+}
+.icn-share {
+	background: url(../img/table.png) no-repeat 0 -195px;
+}
+.icn-share:hover {
+	background-position: -20px -195px;
+}
+.icn-dl {
+	background: url(../img/table.png) no-repeat -81px -174px;
+}
+.icn-dl:hover {
+	background-position: -104px -174px;
+}
+
+.w4 {
+	width: 20%;
+	color: #666;
+}
+.w4 a {
+	color: #666;
+}
+.w4 a:hover {
+	text-decoration: underline;
+}
+.even {
+	background-color: #f7f7f7;
+}
+tr:nth-of-type(odd) {
+	background-color: #f7f7f7;
+}

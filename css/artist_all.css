@@ -1,0 +1,150 @@
+.wrap {
+	width: 709px;
+	min-height: 700px;
+	margin: 0 auto;
+	border: 1px solid #d3d3d3;
+}
+.wrap > .g-wrap {
+	padding: 17px 30px 40px 39px;
+	/*background-color: blue;*/
+}
+.n-artist {
+	position: relative;
+	zoom: 1;
+	height: 333px;
+	/*margin-top: -20px;*/
+	/*background-color: pink;*/
+}
+.artist-name > .name {
+	float: left;
+	height: 34px;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333;
+}
+.artist-home {
+	display: block;
+	position: absolute;
+	bottom: 18px;
+	width: 96px;
+	height: 32px;
+	background: url(../img/iconall.png) no-repeat 0 -1156px;
+	right: 10px;
+}
+ul.m_tabs {
+	border-width: 0 1px;
+	background: url(../img/tab.png) repeat-x 0 0;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+ul.m_tabs li {
+	float: left;
+	position: relative;
+	left: -1px;
+}
+
+ul.m_tabs a {
+	display: block;
+	font-size: 14px;
+	height: 39px;
+	padding-left: 2px;
+}
+ul.m_tabs a em {
+	display: block;
+	color: black;
+	height: 37px;
+	width: 134px;
+	padding: 2px 2px 0 0;
+	line-height: 37px;
+	cursor: pointer;
+	text-align: center;
+}
+ul.m_tabs li:hover {
+	border-top: 2px solid red;
+	height: 37px;
+	color: #B6B6B6;
+}
+ul.m_tabs li.fst:hover {
+	border-top: none;
+}
+ul.m_tabs a em:hover {
+	color: black;
+	padding-top: 0;
+}
+ul.m_tabs li.fst a.z-slt{
+	background: url(../img/tab.png) left -90px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+ul.m_tabs li.fst a.z-slt em {
+	padding-top: 0;
+	border-top: 2px solid red;
+}
+
+div.info > div.content {
+	margin: 20px 0 10px;
+}
+
+div.info > div.content a.btn {
+	background: url(../img/button2.png) no-repeat right -428px;
+	float: left;
+	color: #FFFFFF;
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	cursor: pointer;
+}
+
+a.btn > i {
+	padding: 0 7px 0 8px;
+	width: 61px;
+	background: url(../img/button2.png) no-repeat 0 -633px;
+	display: block;	
+}
+a.btn i em {
+	padding-left: 15px;
+}
+
+
+a.btn:hover i{
+	background: url(../img/button2.png) no-repeat 0 -719px;
+}
+
+a.add {
+	display: block;
+	float: left;
+	width: 31px;
+	height: 31px;
+	;line-height: 30px;
+	margin-left: -3px;
+	margin-right: 5px;
+	background: url(../img/button2.png) no-repeat 0 -1588px;
+}
+
+a.add:hover {
+	background-position: -80px -1588px;
+}
+a.col {
+	color: black;
+	display: block;
+	margin-right: 6px;
+	float: left;
+	height: 31px;
+	width: 106px;
+	background: url(../img/button2.png) no-repeat right -1020px;
+}
+a.col i {
+	float: left;
+    height: 31px;
+    line-height: 30px;
+    min-width: 23px;
+    cursor: pointer;
+    padding: 0 7px 0 36px;
+    background: url(../img/button2.png) no-repeat 0 -977px;
+}
+a.col:hover i {
+	color: black;
+	background-position: 0 -1063px;
+}

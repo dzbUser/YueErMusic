@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/artist.css" />
+		<link rel="stylesheet" type="text/css" href="css/playlist.css" />
+		<link rel="stylesheet" type="text/css" href="css/comment.css" />
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/artist.js"></script>
+	</head>
+
+	<body>
+		<div class="m-playlist">
+			<div class="m-wrap">
+				<!--上面部分-->
+				<div class="m-info clearfix">
+					<div class="cover">
+						<img src="img/album/333.jpg" alt="" />
+						<span class="msk"></span>
+					</div>
+					<div class="cnt">
+						<!--右边部分-->
+						<div class="cntc">
+							<div class="hd clearfix">
+								<i></i>
+								<div class="tt">
+									<h2>听一首粤语老歌，来怀念过去</h2>
+								</div>
+							</div>
+							<div class="user clearfix">
+								<a href="">
+									<img src="img/user/001.jpg" alt="" />
+								</a>
+								<span class="name">
+										<a href="">丑萌的猫</a>
+									</span>
+								<span class="time">
+										2017-11-12&nbsp;创建
+									</span>
+							</div>
+							<div class="btns clearfix">
+								<a href="" class='btn'>
+									<i>
+										<em>播放</em>
+									</i>
+								</a>
+								<a href="" class="add"></a>
+								<a href="" class="col">
+									<i>(27900)</i>
+								</a>
+								<a href="" class="comm">
+									<i>
+										(
+										<span class='comment_count'>233</span>
+										)
+									</i>
+								</a>
+							</div>
+							<div class="tags clearfix">
+								<b>标签:</b>
+								<a href="">
+									<i>粤语</i>
+								</a>
+							</div>
+							<div class="intr clearfix">
+								<b>介绍:</b> 这是一个怀旧的歌单哈哈哈哈哈哈
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--歌曲列表-->
+				<div class="f-cb">
+					<div class="u-title clearfix">
+						<h3>
+								<span>歌曲列表</span>
+							</h3>
+						<span class="sub">
+								<span id='playlist-track-count'>262</span>首歌
+						</span>
+						<div class="playNum">
+							播放: <strong>1805680</strong>次
+						</div>
+					</div>
+					<table class='m-table'>
+						<thead>
+							<tr>
+								<td class='w1'>
+									<div class="hd">
+										<!--<span class='ply'></span>-->
+										<span class="num" title='id'></span>
+									</div>
+								</td>
+								<td class="w2">
+									<div class="tt">
+										<div class="ttc">
+											<span class="txt clearfix">
+													<a href="#">
+														<b title='歌曲标题'>歌曲标题</b>
+													</a>
+													<!--<span class='mv'></span>-->
+											</span>
+										</div>
+									</div>
+								</td>
+								<td>
+									时长
+								</td>
+								<td class='singer'>
+									歌手名
+								</td>
+								<td class="w4">
+									<div class="text">
+										<a href="#" title='专辑'>专辑</a>
+									</div>
+								</td>
+							</tr>
+						</thead>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class='w1'>
+								<div class="hd">
+									<span class='ply'></span>
+									<span class="num" title='id'>1</span>
+								</div>
+							</td>
+							<td class="w2">
+								<div class="tt">
+									<div class="ttc">
+										<span class="txt clearfix">
+												<a href="#">
+													<b title='其实都没有'>其实都没有</b>
+												</a>
+												<!--<span class='mv'></span>-->
+										</span>
+									</div>
+								</div>
+							</td>
+							<td class="w3">
+								<span class='u-dur'>03:51</span>
+								<div class="opt clearfix">
+									<a href="" class="icn-add" title='添加到播放列表'></a>
+									<span class="icn icn-fav" title='收藏'></span>
+									<span class="icn icn-share" title='分享'></span>
+									<span class="icn icn-dl" title='下载'></span>
+								</div>
+							</td>
+							<td class='singer'>
+								杨宗纬
+							</td>
+							<td class="w4">
+								<div class="text">
+									<a href="#" title='初爱'>初爱</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--comment-->
+				<div class="playlist-comment">
+					<div class="comment">
+						<div class="comment-header">
+							<h3><span>评论</span></h3>
+							<span class="comment-num">共173条评论</span>
+						</div>
+						<div class="comment-send">
+							<img src="http://p3.music.126.net/grn33mj2XWXl4dF_9fKt1A==/18832435162290226.jpg?param=50y50" style="width: 50px; height: 50px;" />
+							<div class="send">
+								<textarea placeholder="评论..."></textarea>
+								<div class="tijiao">
+									<span>140</span>
+									<button type="button">
+							提交
+						</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="comment-all">
+							<div class="comment-item">
+								<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+								<div class="comment-content">
+									<a>名字:</a>123456789
+									<div class="time-others">
+										<span class="time">12月5日 12.05</span>
+										<div class="others">
+											<a href="#"><i></i></a>
+											<a>回复</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-item">
+								<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+								<div class="comment-content">
+									<a>名字:</a>123456789
+									<div class="time-others">
+										<span class="time">12月5日 12.05</span>
+										<div class="others">
+											<a href="#"><i></i></a>
+											<a>回复</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-item">
+								<a href="#"><img src="http://p1.music.126.net/T01s15fTa6DiGjH5JESJ9w==/19011655556347561.jpg?param=50y50" style="widows: 50px;height: 50px;" /></a>
+								<div class="comment-content">
+									<a>名字:</a>123456789
+									<div class="time-others">
+										<span class="time">12月5日 12.05</span>
+										<div class="others">
+											<a href="#"><i></i></a>
+											<a>回复</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<ul class="fenye">
+								<li class="shang"><button type="button"><上一页</button></li>
+								<li><button type="button" class="putong">1</button></li>
+								<li><button type="button" class="putong">2</button></li>
+								<li class="xia"><button type="button">下一页></button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		function callParent(){
+			var fheight= document.body.scrollHeight;
+			parent.parentFunction(fheight);
+		}
+		callParent()
+	</script>
+</html>
